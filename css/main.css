@@ -1,10 +1,13 @@
 @font-face {
     font-family: 'GILROYbold';
     src: url("../fonts/Gilroy-ExtraBold.otf") format('truetype');
-}@font-face {
+}
+
+@font-face {
     font-family: 'GILROY';
     src: url("../fonts/Gilroy-Light.otf") format('truetype');
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -44,9 +47,11 @@ nav {
     float: right;
     margin-left: 200px;
 }
-.list-menu .list-nav-item{
-    padding: 0 1px ;
+
+.list-menu .list-nav-item {
+    padding: 0 1px;
 }
+
 .logo {
     left: 0;
     width: 49%;
@@ -92,7 +97,6 @@ nav {
 }
 
 
-
 .nav-mobile-elements ul li a {
     color: white
 }
@@ -106,58 +110,142 @@ nav {
 }
 
 
-.dominate{
+.dominate {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
-.d-boxes{
+
+.d-boxes {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.d-box-item{
+
+.d-box-item {
     margin: 10px;
     max-width: 400px;
     height: 300px;
+    font-size: 14px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
 
-    background: rgba( 255, 255, 255, 0.55 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.d-box-item h1{
+
+.d-box-item h1 {
     transform: rotate(-90deg);
     font-family: GILROY;
 }
-.d-box-item p{
+
+.d-box-item p {
     font-family: GILROY;
 }
-.d-box-item:hover{
+
+.d-box-item:hover {
     transform: scale(1.1);
     transition: 1s;
-    background: rgba( 0, 145, 254, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 12.5px );
-    -webkit-backdrop-filter: blur( 12.5px );
+    background: rgba(0, 145, 254, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
 }
+
+.card {
+    width: 18rem;
+    font-family: GILROY;
+}
+
+.buy-card {
+    margin-top: 100px;
+    /*position: relative;*/
+}
+.buy-center{
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*position: absolute;*/
+    /*transform: translate(-50%,-50%);*/
+}
+
+.buy-card-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: GILROYbold;
+    margin-bottom: 100px;
+}
+
+.card .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.splide{
+    margin-bottom: 100px;
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .carousel-inner {
 
         height: 250px;
+    }
+
+    .card {
+        width: auto;
+    }
+    .splide__arrow--prev{
+        left: 0;
     }
 }
 
